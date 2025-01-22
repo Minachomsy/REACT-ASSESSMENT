@@ -14,6 +14,7 @@ import symbolimg6 from "./image/six6.jpg"
 import teamimg1 from "./image/team-01.jpg"
 import teamimg2 from "./image/team-02.jpg"
 import teamimg3 from "./image/team-03.jpg"
+import peopleimg from "./image/hero-bg24.jpg"
 
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -24,6 +25,7 @@ import { LiaGhostSolid } from "react-icons/lia";
 import { CgScreenMirror } from "react-icons/cg";
 import { MdGradient } from "react-icons/md";
 import { getActiveElement } from "@testing-library/user-event/dist/utils";
+import { GiAutomaticSas, GiBottomRight3dArrow } from "react-icons/gi"
 function App() {
   return (
     <div className="container-fluid">
@@ -347,22 +349,80 @@ Lorem Ipsum is simply dummy text of the printing & typesetting industry. Lorem I
                 <p> Hours Worked</p>
               </div>
              </div>
-             <div className="row">
-              <div className="col-md-6">
-                <h3 style={{color:"navyblue"}}>Set up your awesome<br/>
-                business website quickly.</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                   It has survived not only five centuries, but also the leap into electronic typesetting,
-                    remaining essentially unchanged.</p>
-              
+             <section className="row"style={{paddingTop:100}}>
+        <div className="col-6"style={{paddingLeft:200}}>
+          <h1 style={{color:"darkblue",fontSize:42,marginBottom:18,fontFamily:"sans-serif",paddingTop:50}}>Set up your awesome<br/>
+          business website quickly.</h1>
+          <p style={{paddingRight:200,}}>  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <div className="col-6 progressbar"style={{display:"flex",flexDirection:"column",gap:50,paddingTop:100}}>
+          <div className="progbar1">
+            <div className="progress"style={{height:4,width:500,flex:1}}>
+              <div className="progress-bar"style={{width:"90%"}}></div>
+              <p style={{fontSize:12}}>WORKING HOURS</p>
+            </div>
+          </div>
+          <div className="progbar1">
+            <div className="progress"style={{height:4,width:500,flex:1}}>
+              <div className="progress-bar"style={{width:"90%"}}></div>
+              <div className="progress-label" style={{marginTop:10,color:"darkblue",}}>
+              <div><p className="progress-label" style={{fontSize:12,marginTop:10,}}>AWESOME PROJECTS</p></div>
               </div>
-              <div className="col-6"style={{marginRight:150,paddingRight:200}}>
-              <div className="progress">
-              <div className="progress-bar bg-primary"style={{width:"10%"}}></div>
-             </div>
+            </div>
+          </div>
+          <div className="progbar1">
+            <div className="progress"style={{height:4,width:500,flex:1}}>
+              <div className="progress-bar"style={{width:"90%"}}>
+              <div className="progress-label">
+              <p style={{fontSize:12}}>cups of coffee</p></div>
               </div>
-              
-               </div>
+            </div>
+          </div>
+          <div className="progbar1">
+            <div className="progress"style={{height:4,width:500,flex:1}}>
+              <div className="progress-bar"style={{width:"90%"}}>
+              <div className="progress-label">
+              <p style={{fontSize:12}}>HAPPY CUSTOMERS</p></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div className="row"style={{paddingTop:130}}>
+        <div className="col-6"style={{margin:0,padding:0}}>
+        <img src={peopleimg} alt="simple image"style={{width:"100%",height:"auto",objectFit:"cover"}}/>
+
+        </div>
+        <div className=" col-6 bg-primary"style={{padding:"20px",minHeight:"50vh",display:"flex",flexDirection:"column",}}>
+          <h1 style={{color:"white",marginBottom:"10px",paddingRight:20,paddingLeft:45}}>We're small but impressive.</h1>
+          <p style={{fontSize:40,marginBottom:"30",color:"white",fontWeight:10,paddingLeft:45}}>Experience the power of LeadGen.</p>
+          <div className=" border-bottom"></div>
+          <div className="d-flex"style={{flexWrap:"wrap",justifyContent:"center",marginBottom:"20px",paddingRight:190}}>
+            <div style={{marginRight:"40px"}}><a href="#"style={{color:"white",textDecoration:"none",
+            display:"block",borderBottom:"2px solid white",marginBottom:"10px"}}>COMPANY MISSION</a>
+            <a href="#"style={{color:"white",textDecoration:"none",display:"block",marginRight:"20px"}}>WHAT WE DO</a></div>
+            <a href="#"style={{color:"white",textDecoration:"none",marginRight:"20px"}}>WHY CHOOSE US</a>
+            <a href="#"style={{color:"white",textDecoration:"none"}}>OUR PROMISE</a>
+
+          </div>
+          <p style={{lineHeight:"1.8",marginBottom:"20px",paddingLeft:"50px",marginRight:50,color:"white"}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the standard dummy text. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text.</p>
+            <p style={{paddingLeft:"50px",marginRight:50,color:"white"}}> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+               Lorem Ipsum has been the standard dummy text. Lorem Ipsum is simply dummy text 
+               of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+               <a href="#" style={{backgroundColor:"white",color:"#333",
+               textDecoration:"none",marginTop:"-5px",width:150,fontSize:12,paddingLeft:50,
+                border:"1px solid #ccc",padding:"5px 10px",marginRight:"-30px",
+                borderRadius:"25px",}}>
+                 READ MORE 
+               </a>
+
+        </div>
+
+      </div>
+
                
                 
 
