@@ -15,6 +15,10 @@ import teamimg1 from "./image/team-01.jpg"
 import teamimg2 from "./image/team-02.jpg"
 import teamimg3 from "./image/team-03.jpg"
 import peopleimg from "./image/hero-bg24.jpg"
+import avtarimg1 from "./image/avtar-10.jpg"
+import avtarimg2 from "./image/avtar-11.jpg"
+import avtarimg3 from "./image/avtar-12.jpg"
+import llogoimg from "./image/logo1.jpg"
 
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -422,11 +426,122 @@ Lorem Ipsum is simply dummy text of the printing & typesetting industry. Lorem I
         </div>
 
       </div>
+      <div className="row"style={{paddingTop:100,paddingLeft:200,}}> 
+        <div className="col-4">
+          <img src={avtarimg1} alt="Avtar image"style={{width:150,height:150,borderRadius:"100%",border:"1px solid #ccc",marginBottom:"5px"}}/>
+          <p style={{textAlign:"center",paddingRight:100,fontSize:12}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry
+           It has survived not only five centuries but also the leap into electronic 
+          typesetting remaining essentially unchanged </p>
+          <h6 style={{fontSize:12,marginLeft:50}}>Jeremy Gerald-microsoftword</h6>
+         </div>
+         <div className="col-4">
+          <img src={avtarimg2} alt="Avtar image"style={{width:150,height:150,borderRadius:"100%",border:"1px solid #ccc",marginBottom:"5px"}}/>
+          <p style={{textAlign:"center",paddingRight:100,fontSize:12}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry
+           It has survived not only five centuries but also the leap into electronic 
+          typesetting remaining essentially unchanged </p>
+          <h6 style={{fontSize:12,marginLeft:50}}>Melisa smith-Google</h6>
+         </div>
+         <div className="col-4">
+          <img src={avtarimg3} alt="Avtar image"style={{width:150,height:150,borderRadius:"100%",border:"1px solid #ccc",marginBottom:"5px"}}/>
+          <p style={{textAlign:"center",paddingRight:100,fontSize:12}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry
+           It has survived not only five centuries but also the leap into electronic 
+          typesetting remaining essentially unchanged </p>
+          <h6 style={{fontSize:12,marginLeft:50}}>Paul Scrivens-FACEBOOK</h6>
+         </div>
+        </div>
+        <div className="row"style={{backgroundColor:"#E8E8E8"}}>
+          
+          <div className="col md-6"style={{backgroundColor:"white",paddingLeft:200,paddingTop:50,marginTop:50,marginBottom:50,marginLeft:100}}>
+            
+            <h4 style={{marginBottom:"2rem"}}>
+              Ready to Get started?
 
-               
-                
+            </h4>
+            <form action="/action_page.php">
+    <div class="mb-3 mt-3">
+      
+      <input type="email" class="form-control" id="email" placeholder="*Your Name" name="email"/>
+    </div>
+    <div class="mb-3">
+      
+      <input type="password" class="form-control" id="pwd" placeholder="*Your Email" name="pswd"/>
+    </div>
+    <div class="mb-3">
+      
+      <input type="password" class="form-control" id="pwd" placeholder="Your Message" name="pswd"/>
+    </div>
+    <div class="form-check mb-3">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox" name="remember"/> Remember me
+      </label>
+    </div>
+    <button type="submit" class="btn btn-success"style={{borderRadius:"25px",}}>Send Message</button>
+  </form>
 
-                    </div>
+</div>          
+<div className="col-md-6">
+  <h2 style={{marginTop:50,fontWeight:20,marginLeft:100}}>Looking For a Excellent<br/> Business Idea?</h2>
+  <p style={{marginTop:10,marginLeft:100}}>Lorem Ipsum is simply dummy text of the printing and typesetting<br/> industry. Lorem Ipsum has been the standard dummy text.</p>
+  <button type="submit" class="btn btn-success"style={{borderRadius:"25px",marginLeft:100}}>Get Direction</button>
+  <div className=" border-bottom"></div>
+  <h6 style={{marginTop:20,marginLeft:100}}>Our Headquarters</h6>
+  <p style={{marginLeft:100}}>301 The Greenhouse, Custard,<br/>
+  Factory, London, E2 8DY.</p>
+  <p style={{marginLeft:100}}>+44 (0) 123 456 7890</p>
+  <p style={{marginLeft:100,borderBottom:10,marginBottom:10}}>no-reply@domain.com</p>
+
+  </div>
+  
+   </div>
+   <div className="row">
+    <div className="col-6">
+       <img src={llogoimg} alt="logo image"style={{marginLeft:100,marginTop:50}}/>
+       <p style={{paddingLeft:100,fontSize:14,marginTop:50}}>We've been crafting beautiful websites, launching stunning brands and<br/> 
+       making clients happy for years. With our prestigious craftsmanship.</p>
+       <div className=" border-bottom"style={{lineHeight:50}}></div>
+       <p style={{marginTop:20,paddingLeft:100,fontSize:14,paddingBottom:100}}>© 2016 LeadGen is Proudly Powered By ThemeZaa.</p>
+      
+
+    </div>
+    <div className="col-2"style={{marginTop:70}}>
+      <h6>Company</h6>
+      <p style={{fontSize:14}}>About Us</p>
+      <p style={{fontSize:14}}>Testimonials</p>
+      <p style={{fontSize:14}}>FAQ's</p>
+      <div className=" border-bottom"style={{lineHeight:50}}></div>
+      
+
+    </div>
+    <div className="col-2"style={{marginTop:70}}>
+      <h6>Useful Links</h6>
+      <p style={{fontSize:14}}>Useful Links</p>
+      <p style={{fontSize:14}}>Our process</p>
+      <p style={{fontSize:14}}>People</p>
+      <div className=" border-bottom"style={{lineHeight:50}}></div>
+      
+
+    </div>
+    <div className="col-2"style={{marginTop:70}}>
+      <h6>Follow Us</h6>
+      <p style={{fontSize:14}}>Facebook</p>
+      <p style={{fontSize:14}}>Twitter</p>
+      <p style={{fontSize:14}}>Google Plus</p>
+      <div className=" border-bottom"></div>
+      <FaFacebookF style={{marginLeft: "10px",marginRight:10,marginTop:30,color:"darkblue"}}/>
+             <FaTwitter style={{marginLeft: "20px",marginTop:30,color:"blue"}}/>
+             <FaLinkedinIn style={{marginLeft: "20px",marginTop:30,color:"blue"}}/>
+             <FaPinterest style={{marginLeft: "20px",marginTop:30,color:"red"}} />
+             <FaGooglePlusG style={{marginLeft: "20px",color:"red",marginTop:30}} />
+      
+
+    </div>
+
+   </div>
+      
+  </div>
+
+      
+
 
                     
                 
